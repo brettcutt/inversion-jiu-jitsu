@@ -1,4 +1,14 @@
+/*----------------------Headings------------------------*/
+.h2-heading{
+    font-family: "permanent marker", sans-serif;
+    color: #000;
+    margin:40px 0 70px 0;
+}
 
+.sub-heading-center{
+    text-align: center;
+}
+/*----------------------Headings------------------------*/
 
 /*----------------------Home section------------------------*/
 .heading-section{
@@ -6,6 +16,7 @@
 }
 
 .logo{
+    position: fixed;
     height: 50px;
     width: 50px;
 }
@@ -34,8 +45,10 @@
     text-align: center;
 }
 .navigation-bar{
-    position: absolute;                          
-    top: 40vh;
+    
+    position: fixed;   
+    z-index: 2;
+    
 }
 .navigation-row {
     text-align: center;
@@ -44,16 +57,16 @@
 }
 
 .navigation-menu{
+    
     list-style: none;
     padding: 0;
-    
+    text-align: center;
+     
 }
 
-.navigation-menu{
-    text-align: center;
-}
 
 .link-inlineblock{
+    
     display: inline-block;
     
 }
@@ -66,6 +79,7 @@
     font-size: 1.5em;
     color: #000;
     letter-spacing: 1px;
+   
 }
 .btn-home-row{
     position: absolute;
@@ -79,7 +93,7 @@
     transform: translateX(-50%);
 }
 
-/*----------------------Home section mediaquery------------------------*/
+
 
 /*----------------------Home section------------------------*/
 
@@ -92,3 +106,122 @@
 }
 
 /*----------------------About Us------------------------*/
+/*----------------------Schedule------------------------*/
+
+.class-info-row{
+    margin-bottom: 70px;
+    background-color: #000;
+    color: #fff
+}
+.h3-box{
+ height: 50px;   
+}
+.text-center {
+    text-align: center;
+}
+
+.color-legend {
+    height: 20px;
+    width: 100px;
+    display: inline-block;
+}
+.blue-legend{
+    background-color: blue;
+}
+.purple-legend{
+    background-color:purple;
+}
+.yellow-legend{
+    background-color:yellow;
+}
+.brown-legend{
+    background-color:brown;
+}
+.table-center {
+    text-align: center;
+}
+
+.schedule-table-row{
+    margin-bottom: 110px;
+}
+.schedule-border {
+    border:15px solid #000;
+    border-radius: 15px;
+    display: inline-block;
+    /*https://www.cssmatic.com/box-shadow*/
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.schedule{
+   border:5px solid #000;
+}
+.schedule-block{
+    border:2px solid #000;
+    height: 50px;
+    
+    text-align: center;
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    
+}
+.schedule-block:hover {
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    vertical-align: middle;
+    position: absolute;
+    
+    background-color:#fff ;
+    width: 10%;
+    height: 15%;
+    border: 1px solid #000;
+    color: #000;
+    
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    
+}
+.time-block{
+    background-color: darkgray;
+    border:2px solid #000;
+    height: 50px;
+    width: 90px;
+    text-align: center;
+     /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  
+}
+.day-block{
+    background-color: darkgray;
+    border:2px solid #000;
+    height: 50px;
+    width: 90px;
+    text-align: center;
+     /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  
+}
+.empty-block{
+    background-color: gray;
+    border:2px solid #000;
+    height: 50px;
+    width: 90px;
+    text-align: center;
+     /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  
+}
+
+/*----------------------Schedule------------------------*/
