@@ -1,3 +1,94 @@
-body{
-    background-color: blue;
+
+
+/*----------------------Home section------------------------*/
+.heading-section{
+    height: 95vh;
 }
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.menu-bars{
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 20px;
+}
+.bar{
+    display: block;
+    border:1.5px solid black;
+    width: 40px;
+    margin-top: 5px;
+}
+.heading-position{
+    margin-top: 200px;
+}
+.main-heading{
+
+    font-family: "permanent marker", sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.navigation-bar{
+    position: absolute;                          
+    top: 40vh;
+}
+.navigation-row {
+    text-align: center;
+    padding: 0;
+    
+}
+
+.navigation-menu{
+    list-style: none;
+    padding: 0;
+    
+}
+
+.navigation-menu{
+    text-align: center;
+}
+
+.link-inlineblock{
+    display: inline-block;
+    
+}
+
+.col-link-custom{
+    width: 13%;
+}
+.navigation-link{
+    font-family: "boogaloo", sans-serif;
+    font-size: 1.5em;
+    color: #000;
+    letter-spacing: 1px;
+}
+.btn-home-row{
+    position: absolute;
+    top: 90%;
+    left: 50%
+;
+    
+}
+.btn-home-col {
+    
+    transform: translateX(-50%);
+}
+
+/*----------------------Home section mediaquery------------------------*/
+
+/*----------------------Home section------------------------*/
+
+/*----------------------About Us------------------------*/
+.about-us-section {
+    background-color: yellow;
+}
+.instructor{
+    height: 180px;
+}
+
+/*----------------------About Us------------------------*/
