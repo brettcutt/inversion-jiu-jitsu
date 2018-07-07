@@ -8,6 +8,12 @@
 .sub-heading-center{
     text-align: center;
 }
+.h3-heading {
+        font-family: "boogaloo", sans-serif;
+    }
+.h3-box{
+ height: 50px;   
+}
 /*----------------------Headings------------------------*/
 
 /*----------------------Home section------------------------*/
@@ -99,7 +105,7 @@
 
 /*----------------------About Us------------------------*/
 .about-us-section {
-    background-color: yellow;
+    background-color: #ffffcc;
 }
 .instructor{
     height: 180px;
@@ -107,15 +113,17 @@
 
 /*----------------------About Us------------------------*/
 /*----------------------Schedule------------------------*/
-
+.schedule-fa{
+    font-size: 40px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
 .class-info-row{
     margin-bottom: 70px;
     background-color: #000;
     color: #fff
 }
-.h3-box{
- height: 50px;   
-}
+
 .text-center {
     text-align: center;
 }
@@ -139,6 +147,7 @@
 }
 .table-center {
     text-align: center;
+    
 }
 
 .schedule-table-row{
@@ -157,36 +166,7 @@
 .schedule{
    border:5px solid #000;
 }
-.schedule-block{
-    border:2px solid #000;
-    height: 50px;
-    
-    text-align: center;
-    /*https://www.cssmatic.com/box-shadow*/
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    
-}
-.schedule-block:hover {
-    transition: all;
-    transition-timing-function: ease-in-out;
-    transition-duration: .5s;
-    vertical-align: middle;
-    position: absolute;
-    
-    background-color:#fff ;
-    width: 10%;
-    height: 15%;
-    border: 1px solid #000;
-    color: #000;
-    
-    /*https://www.cssmatic.com/box-shadow*/
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-    
-}
+
 .time-block{
     background-color: darkgray;
     border:2px solid #000;
@@ -223,5 +203,107 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   
 }
+.schedule-block{
+    border:2px solid #000;
+    height: 50px;
+    
+    text-align: center;
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    
+    /*----------------------Schedule media query------------------------*/
+}
+@media (max-width:767px){
+    .overflow-schedule{
+        overflow: hidden;
+        overflow-x: scroll;
+    
+    }
+.schedule-block:hover {
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    position: absolute;
+    width: 50px;
+    height: 12%;
+    background-color:#fff ;
+    border: 1px solid #000;
+    color: #000;
+    
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);    
+}
+}
+@media (min-width:768px) and (max-width:991px){
+.schedule-block:hover {
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    position: absolute;
+    width: 75px;
+    height: 12%;
+    background-color:#fff ;
+    border: 1px solid #000;
+    color: #000;
+    
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);    
+}
+}
 
+@media (min-width:992px){
+.schedule-block:hover {
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    position: absolute;
+    width: 105px;
+    height: 12%;
+    background-color:#fff ;
+    border: 1px solid #000;
+    color: #000;
+    
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);    
+}
+}
 /*----------------------Schedule------------------------*/
+/*----------------------Gallery------------------------*/
+.gallery-cell{
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    
+}
+.cell-block{
+    width: 150px;
+    height: 150px;
+    display: block;
+    overflow: hidden;
+}
+.gallery-img-1{
+    width: 150px
+}
+
+.gallery-img-1:hover{
+    
+    transition: all;
+    transition-duration: 2s;
+    
+    transition-timing-function: ease-in-out;
+    transform: scale(3);
+    overflow: visible;
+    
+}
+.cell-block:hover{
+    overflow: visible;
+    display: inline-block;
+}
