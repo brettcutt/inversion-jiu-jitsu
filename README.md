@@ -10,3 +10,11 @@ https://www.cssmatic.com/box-shadow
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+the slide show gallery
+
+
+
+<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
+This is for the accordion in the faq section

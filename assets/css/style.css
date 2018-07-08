@@ -72,9 +72,7 @@
 
 
 .link-inlineblock{
-    
     display: inline-block;
-    
 }
 
 .col-link-custom{
@@ -277,33 +275,254 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 /*----------------------Schedule------------------------*/
 /*----------------------Gallery------------------------*/
-.gallery-cell{
-    padding: 20px;
-    width: 150px;
-    height: 150px;
-    
-}
-.cell-block{
-    width: 150px;
-    height: 150px;
-    display: block;
-    overflow: hidden;
-}
-.gallery-img-1{
-    width: 150px
+.gallery-section{
+    margin-bottom: 140px;
 }
 
-.gallery-img-1:hover{
+
+/*slideshow is from the below reference and in between comments*/
+/*https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+.gallery-container {
+  position: relative;
+  padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.image-row{
+    padding-left: 15px;
+}
+.next {
+    right: 15px;
+    border-radius: 3px 0 0 3px;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.30%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+@media (min-width: 1200px){
+.gallery-container {
+    width: 1170px;
+}}
+@media (min-width: 992px){
+.gallery-container {
+    width: 970px;
+}}
+@media (min-width: 768px){
+.gallery-container {
+    width: 750px;
+}}
+/*https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
+
+/*----------------------Gallery------------------------*/
+/*----------------------FAQ------------------------*/
+.faq-section{
     
-    transition: all;
-    transition-duration: 2s;
-    
-    transition-timing-function: ease-in-out;
-    transform: scale(3);
-    overflow: visible;
+    background-color: #ffffcc;
     
 }
-.cell-block:hover{
-    overflow: visible;
+.accordion-row{
+    margin-bottom: 50px;
+    
+    padding: 20px;
+    
+}
+.faq-column{
+    
+    padding: 2px; 
+    
+}
+
+
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion*/
+.accordion {
+    
+    margin-bottom: 5px;
     display: inline-block;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    
 }
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    width: 100%;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+    /*https://www.cssmatic.com/box-shadow*/
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion*/
+
+/*----------------------FAQ------------------------*/
+/*----------------------Pricing------------------------*/
+.pricing-section{
+    margin-top: 70px;
+}
+
+.pricing-box{
+    
+    height: 380px;
+    border:1px solid #000;
+    background-color: white;
+    margin-bottom: 8.3%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.pricing-box {
+    background-color: orange;
+    text-align: center;
+}
+.pricing-box-content{
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    background-color: #fff;
+    display: block;
+    font-family: "boogaloo", sans-serif;
+    font-size: 1.5em;
+    border-radius: 15px;
+}
+
+.pricing-box-head {
+    font-size: 2em;
+    margin:15px 0;
+    
+}
+.pricing-box-mid {
+    margin-bottom: 20px;
+    
+}
+.pricing-box-bot {
+    height: 240px
+}
+
+.pricing-gray{
+    background-color: silver;
+}
+.pricing-gold{
+    background-color: gold;
+}
+
+
+@media (max-width:500px){
+    .pricing-box{
+        height: 300px
+    }
+    .pricing-box-bot{
+        height: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------Pricing------------------------*/
