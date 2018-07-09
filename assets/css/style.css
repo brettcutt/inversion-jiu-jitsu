@@ -1,3 +1,7 @@
+body{
+    font-family: "boogaloo", sans-serif;
+}
+
 /*----------------------Headings------------------------*/
 .h2-heading{
     font-family: "permanent marker", sans-serif;
@@ -17,8 +21,25 @@
 /*----------------------Headings------------------------*/
 
 /*----------------------Home section------------------------*/
-.heading-section{
+.heading-container{
+    padding: 0;
+}
+.opacity{
+   position:absolute;
+    top: 0;
+    left: 0;
     height: 95vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.heading-section{
+    
+    height: 95vh;
+    background-image: url(../images/brownbelt2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .logo{
@@ -49,6 +70,8 @@
     font-size: 50px;
     letter-spacing: 5px;
     text-align: center;
+    z-index: 3;
+    color: #000;
 }
 .navigation-bar{
     
@@ -96,7 +119,24 @@
     
     transform: translateX(-50%);
 }
-
+@media (max-width:767px){
+    .heading-position{
+        
+    }
+    .heading-row-no-side-margin{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (min-width:768px) and (max-width: 991px){
+    .heading-position{
+        
+    }
+    .heading-row-no-side-margin{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 
 /*----------------------Home section------------------------*/
@@ -104,13 +144,27 @@
 /*----------------------About Us------------------------*/
 .about-us-section {
     background-color: #ffffcc;
+    padding-bottom: 150px;
 }
 .instructor{
     height: 180px;
 }
 
 /*----------------------About Us------------------------*/
+
 /*----------------------Schedule------------------------*/
+.schedule-section{
+    
+    background-image: url(../images/rainandtyronesitting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+.schedule-inner-container{
+    background-color: rgba(194,226,255,0.5);
+}
 .schedule-fa{
     font-size: 40px;
     padding: 0 20px;
@@ -118,7 +172,7 @@
 }
 .class-info-row{
     margin-bottom: 70px;
-    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
     color: #fff
 }
 
@@ -275,8 +329,18 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 /*----------------------Schedule------------------------*/
 /*----------------------Gallery------------------------*/
+.gallery-pricing-faq-section{
+    background-image: url(../images/rainandtyronebg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
 .gallery-section{
-    margin-bottom: 140px;
+    height: 90%;
+}
+.gallery-inner-container{
+    background-color: rgba(194,226,255,0.5);;
+    height: 90%;
 }
 
 
@@ -398,11 +462,10 @@ img {
 /*https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
 
 /*----------------------Gallery------------------------*/
+
 /*----------------------FAQ------------------------*/
 .faq-section{
-    
-    background-color: #ffffcc;
-    
+    background-color:rgba(194,226,255,0.5);;
 }
 .accordion-row{
     margin-bottom: 50px;
@@ -420,7 +483,9 @@ img {
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion*/
 .accordion {
-    
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
     margin-bottom: 5px;
     display: inline-block;
     background-color: #eee;
@@ -431,7 +496,7 @@ img {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
     transition: 0.4s;
     /*https://www.cssmatic.com/box-shadow*/
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
@@ -445,6 +510,7 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
 .panel {
+    font-family: sans-serif;
     width: 100%;
     display: none;
     background-color: white;
@@ -452,77 +518,294 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
     margin: 0 0 5px 0;
     /*https://www.cssmatic.com/box-shadow*/
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion*/
 
 /*----------------------FAQ------------------------*/
+
+
 /*----------------------Pricing------------------------*/
-.pricing-section{
-    margin-top: 70px;
+
+.pricing-inner-container{
+    background-color: rgba(194,226,255,0.5);
+    padding-bottom: 70px;
 }
 
-.pricing-box{
-    
-    height: 380px;
-    border:1px solid #000;
+
+
+
+.test-box{
+    font-family: sans-serif;
+    width: 260px;
+    height: 450px;
+    border: 1px solid #000;
+    display: inline-block;
+    background-color: #7F7C6F;
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.special-color{
+    background-color: #404040;
+}
+
+.test-content{
+    border: 1px solid #000;
+    margin-top: 15px;
+    display: inline-block;
+    width: 80%;
+    font-size:30px;
     background-color: white;
-    margin-bottom: 8.3%;
-    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
+.test-bottom{
+    font-size: 25px;
+    height:280px ;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+.strong-box{
+        font-weight: 900;
+    }
 
-.pricing-box {
-    background-color: orange;
+.onceaweek-font{
+    font-size: 26px
+}
+
+@media (min-width:768px) and (max-width:991px){
+    
+    .test-box{
+    width: 220px;
+    height: 350px;
+    }
+    .float-right{
+        float: right;
+    }
+    .float-left{
+        float: left;
+    }
+
+    .test-content{
+       font-size: 20px;
+    }
+    .test-bottom{
+       height: 205px;
+    }
+    .onceaweek-font{
+    font-size: 20px
+    }
+    
+}
+    
+@media (min-width:992px){
+    .test-box{
+        width: 200px;
+        height: 285px
+    }
+
+    .test-content{
+   font-size: 16px;
+    }
+    .test-bottom{
+   height: 155px;
+   padding-left: 5px;
+   padding-right: 5px;
+    }
+    .onceaweek-font{
+    font-size: 16px
+    }
+    .pricing-column{
+        padding: 0;
+    }
+    .pricing-row{
+        padding:50px;
+    }
+    }
+/*----------------------Pricing------------------------*/
+
+/*
+.section-separator{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
+*/
+
+/*----------------------contact------------------------*/
+.contact-h3{
+    color: #000;
+    padding:0 0 15px 0;
+    
+}
+.contact-section{
+    
+    background-image: url(../images/homepageedit.jpg) ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contact-opacity{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+}
+
+.opacity-white{
+    background-color: rgba(255,255,255,.5);
+    padding-bottom:20px;
+    margin:0 0;
+}
+
+.contact-detail-table{
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+}
+.contact-cell{
+    padding-top: 0;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.block{
+    width: 100%;
+}
+
+input[type="text"]{
+    width: 49.5%;
+    font-size: 20px;
+    
+}
+input[type="email"]{
+    width: 49.5%;
+    float: right;
+    font-size: 20px;
+}
+textarea{
+    margin-top: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+input[type="submit"]{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+}
+.map-row{
+    padding-bottom: 75px
+}
+.map{
+    width: 30vw;
+    height: 35vh;
+    
+}
+.map-cover{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 1000px;
+   overflow: hidden;
+}
+
+
+@media (max-width:767px){
+    .contact-section .no-padding{
+        padding: 0;
+    }
+    
+    .contact-detail-table{
+        padding: 0
+    }
+    
+    .contact-section{
+        height: 100%;
+    }
+    
+    .contact-cell{
+        padding-right: 10px;
+        font-size: 16px;
+    }
+    
+    .map{
+    width: 85%;
+    height: 100%;
+    }
+    
+    .map-cover{
+    overflow: visible;
+    width: 85vw;
+    height: vh;
+    }
+    
+}
+@media (min-width:768px) and (max-width:991px){
+    .map{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:992px){
+    
+}
+
+
+/*----------------------Contact------------------------*/
+/*----------------------Footer------------------------*/
+footer{
+        background-color: #000;
+        height: 10%;
+
+}
+
+.footer-row{
+    padding-top: 15px;
     text-align: center;
 }
-.pricing-box-content{
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+.socialmedia-ul {
+    list-style: none;
+    text-align: center;
+}
+.socialmedia-li{
+    display: inline-block;
+}
+.socialmedia-link{
+    
+    margin: 0 15px 0 15px;
+    float: left;
+    padding: 15px;
     background-color: #fff;
-    display: block;
-    font-family: "boogaloo", sans-serif;
-    font-size: 1.5em;
-    border-radius: 15px;
-}
-
-.pricing-box-head {
-    font-size: 2em;
-    margin:15px 0;
+    border-radius: 50px;
     
 }
-.pricing-box-mid {
-    margin-bottom: 20px;
+.socialmedia-ul li a i{
+    font-size: 25px;
     
 }
-.pricing-box-bot {
-    height: 240px
-}
 
-.pricing-gray{
-    background-color: silver;
-}
-.pricing-gold{
-    background-color: gold;
-}
-
-
-@media (max-width:500px){
-    .pricing-box{
-        height: 300px
+@media (max-width: 767px){
+    .socialmedia-ul{
+        padding: 0;
     }
-    .pricing-box-bot{
-        height: 160px;
+    .socialmedia-link{
+        margin:0 10px 0 0px;
+        padding: 5px;
+        
+    }
+    .socialmedia-ul li a i{
+        font-size: 20px;
+    }
 }
 
 
 
 
-
-
-
-
-
-
-
-/*----------------------Pricing------------------------*/
+/*----------------------Footer------------------------*/
