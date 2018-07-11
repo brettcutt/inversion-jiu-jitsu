@@ -20,3 +20,10 @@ This is for the accordion in the faq section
 
  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3273.4360947450377!2d138.63722329258113!3d-34.87039399773799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1531043627247" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>  
 google map location
+
+The description of jiu-jitsu is from:
+https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu
+
+The description of the academy is based from:
+http://www.sabjj.com.au/index.php/27-top-blocks/20-popularizing-and-developing-traditional-karate
+

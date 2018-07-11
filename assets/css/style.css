@@ -4,19 +4,27 @@ body{
 
 /*----------------------Headings------------------------*/
 .h2-heading{
+    display: inline-block;
     font-family: "permanent marker", sans-serif;
     color: #000;
-    margin:40px 0 70px 0;
+    margin:70px 0 70px 0;
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px ;
 }
 
 .sub-heading-center{
     text-align: center;
 }
 .h3-heading {
+    display: inline-block;
         font-family: "boogaloo", sans-serif;
+        margin:10px 0 40px 0;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px ;
+    color: #000;
     }
 .h3-box{
- height: 50px;   
+ height: 40px;   
 }
 /*----------------------Headings------------------------*/
 
@@ -34,8 +42,8 @@ body{
 }
 .heading-section{
     
-    height: 95vh;
-    background-image: url(../images/brownbelt2.jpg);
+    height: 97vh;
+    background-image: url(../images/brownbelt2edit.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -46,21 +54,143 @@ body{
     position: fixed;
     height: 50px;
     width: 50px;
+    z-index: 4;
 }
 
-.menu-bars{
-    margin-top: 10px;
+.navigation-row-0 {
+    height: 55px;
+    width: 100%;
+    background-color:rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 3;
+    padding: 10px 0
+}
+
+.menu-bars-2{
+    margin-top: 20px;
+    margin-right: 10px;
     height: 50px;
     width: 50px;
     float: right;
-    margin-right: 20px;
+    
 }
-.bar{
+.bar-3{
     display: block;
     border:1.5px solid black;
     width: 40px;
     margin-top: 5px;
 }
+
+.navigation-bar-4{
+    position: fixed;   
+    z-index: 2;
+}
+.navigation-menu-5{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.link-inlineblock-6{
+    display: inline-block;
+    color:#000;
+}
+
+.col-link-custom-6{
+    width: 13%;
+}
+
+.navigation-row-0 a{
+    text-decoration: none;
+    color: gray;
+    font-family: "boogaloo", sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.navigation-row-0 a:hover{
+    color:#ffe;
+}
+
+/*----------------------------Nav media query---------------*/
+@media (max-width: 767px){
+    .logo-box{
+        position: fixed;
+        top: 10px;
+        background-color: #000;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        z-index:4;
+    }
+    
+    .navigation-row-0:hover .navigation-bar-4 {
+    display: block !important ;
+}
+.navigation-row-0{
+    height: 0;
+    padding: 0;
+
+}
+    .navigation-menu-1{
+    position: fixed;
+    float: right;
+    right: 2px;
+    top: 0px;
+    z-index: 1;
+}
+.navigation-menu-1:hover{
+    background-color:rgba(0,0,0,0.7);
+    height:260px;
+    width:115px;
+}
+.menu-bars-2:hover.bar-3{
+    background-color:#fff;
+    border-color:#fff;
+    
+}
+
+.navigation-bar-4{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    
+    display: inline-block;
+    z-index:1;
+}
+
+.navigation-listitem-6{
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+.link-inlineblock-6{
+    display: block !important;
+    width:120px;
+    
+    z-index:2;
+     
+    
+}
+.link-inlineblock-6:hover{
+    background-color: #fff;
+    color:#000;
+    
+}
+
+.navigation-link-7{
+    color:#fff;
+    display:block;
+    text-decoration:none;
+}
+.navigation-row-0 a{
+    text-decoration:none;
+} 
+.navigation-row-0 a:hover{
+    color:#000;
+} 
+}
+/*----------------------------Nav media query---------------*/
 .heading-position{
     margin-top: 200px;
 }
@@ -73,65 +203,32 @@ body{
     z-index: 3;
     color: #000;
 }
-.navigation-bar{
-    
-    position: fixed;   
-    z-index: 2;
-    
-}
-.navigation-row {
+
+.btn-home-col {
     text-align: center;
-    padding: 0;
-    
+    position: absolute;
+    top: 75%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height:60px;
+    padding: 15px 0;
+    background-color: lightyellow;
+    border-radius: 5px;
 }
-
-.navigation-menu{
-    
-    list-style: none;
-    padding: 0;
-    text-align: center;
-     
-}
-
-
-.link-inlineblock{
+.find-out-more-btn{
     display: inline-block;
 }
-
-.col-link-custom{
-    width: 13%;
-}
-.navigation-link{
-    font-family: "boogaloo", sans-serif;
-    font-size: 1.5em;
+.btn-home-col p{
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
     color: #000;
-    letter-spacing: 1px;
-   
 }
-.btn-home-row{
-    position: absolute;
-    top: 90%;
-    left: 50%
-;
-    
-}
-.btn-home-col {
-    
-    transform: translateX(-50%);
-}
-@media (max-width:767px){
-    .heading-position{
-        
-    }
-    .heading-row-no-side-margin{
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-@media (min-width:768px) and (max-width: 991px){
-    .heading-position{
-        
-    }
+
+@media (max-width: 991px){
     .heading-row-no-side-margin{
         margin-left: 0;
         margin-right: 0;
@@ -142,12 +239,62 @@ body{
 /*----------------------Home section------------------------*/
 
 /*----------------------About Us------------------------*/
-.about-us-section {
-    background-color: #ffffcc;
-    padding-bottom: 150px;
+.about-us-container-fluid{
+    background-image: url(../images/brownbeltedit.jpg);
+    background-position: bottom ;
+    background-attachment: fixed;
+    padding: 70px 0 70px 0;
 }
-.instructor{
-    height: 180px;
+.about-us-section {
+     background-color: rgba(0,0,0,.5);
+    padding-bottom: 50px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.about-us-row{
+    font-family:"roboto", sans-serif;
+    background-color: rgba(255,255,255,0.8);
+    margin:0 25px 25px 25px;
+    padding: 20px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.about-column{
+    padding: 0px 20px 0px 20px;
+}
+.instructor-image{
+    
+    background-image: url(../images/instructornosign.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 370px;
+    
+   
+}
+.Academy-image {
+    background-image: url(../images/academyfromfront.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: contain;
+    background-position: top center;
+}
+.instructor-achievements{
+    padding: 0 0 0 15px ;
+    
+}
+
+
+@media (max-width:767px) {
+    
+}
+@media (min-width:768px) and (max-width:991px) {
+    
+}
+@media (min-width:768px) and (max-width:991px) {
+    
 }
 
 /*----------------------About Us------------------------*/
@@ -155,26 +302,37 @@ body{
 /*----------------------Schedule------------------------*/
 .schedule-section{
     
-    background-image: url(../images/rainandtyronesitting.jpg);
+    background-image: url(../images/rainandtyronesittingedit.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     height: 100%;
+    padding: 70px 0 70px 0;
 }
 .schedule-inner-container{
-    background-color: rgba(194,226,255,0.5);
+    background-color: rgba(0,0,0,0.5);
+    
 }
 .schedule-fa{
     font-size: 40px;
     padding: 0 20px;
     margin-bottom: 15px;
+    color: #000;
 }
 .class-info-row{
-    margin-bottom: 70px;
-    background-color: rgba(0,0,0,0.5);
-    color: #fff
+    margin:0 20px 70px 20px;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+.class-info-row{
+    font-family: "roboto",sans-serif;
+}
+
 
 .text-center {
     text-align: center;
@@ -209,6 +367,7 @@ body{
     border:15px solid #000;
     border-radius: 15px;
     display: inline-block;
+    background-color: rgba(255,255,255,0.5);
     /*https://www.cssmatic.com/box-shadow*/
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -328,22 +487,38 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 }
 /*----------------------Schedule------------------------*/
-/*----------------------Gallery------------------------*/
+/*----------------------gallery-pricing-faq-section------------------------*/
 .gallery-pricing-faq-section{
-    background-image: url(../images/rainandtyronebg.jpg);
+    background-image: url(../images/brownbeltedit.jpg);
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-.gallery-section{
-    height: 90%;
-}
-.gallery-inner-container{
-    background-color: rgba(194,226,255,0.5);;
-    height: 90%;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 100px 0 100px 0;
 }
 
+.gallery-pricing-faq-inner-container{
+    background-color: rgba(0,0,0,0.5);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    padding: 0px 0 70px 0;
+    
+}
+/*----------------------gallery-pricing-faq-section------------------------*/
+/*----------------------Gallery------------------------*/
 
+
+
+
+.gallery-row{
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 25px 25px 25px;
+    padding: 70px 0 70px 0px;
+    
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+}
 /*slideshow is from the below reference and in between comments*/
 /*https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
 
@@ -362,6 +537,7 @@ img {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    
 }
 
 
@@ -457,21 +633,21 @@ img {
 }}
 @media (min-width: 768px){
 .gallery-container {
-    width: 750px;
+    width: 650px;
 }}
 /*https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
 
 /*----------------------Gallery------------------------*/
 
 /*----------------------FAQ------------------------*/
-.faq-section{
-    background-color:rgba(194,226,255,0.5);;
-}
+
 .accordion-row{
-    margin-bottom: 50px;
-    
+    background-color:rgba(255,255,255,0.5);
+    margin: 0 20px 0 20px;
     padding: 20px;
-    
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .faq-column{
     
@@ -483,16 +659,16 @@ img {
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion*/
 .accordion {
-    text-align: center;
+    
     font-weight: bold;
     font-family: sans-serif;
-    margin-bottom: 5px;
+    margin: 10px;
     display: inline-block;
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 15px;
-    width: 100%;
+    width: 95%;
     border: none;
     text-align: left;
     outline: none;
@@ -502,7 +678,7 @@ img {
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-    
+    text-align: center;
 }
 
 .active, .accordion:hover {
@@ -510,16 +686,19 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
 .panel {
+    display: inline-block;
     font-family: sans-serif;
-    width: 100%;
+    width: 95%;
     display: none;
     background-color: white;
     overflow: hidden;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px 10px;
     /*https://www.cssmatic.com/box-shadow*/
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    text-align: left;
+    
 }
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion*/
 
@@ -527,15 +706,14 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 
 
 /*----------------------Pricing------------------------*/
-
-.pricing-inner-container{
-    background-color: rgba(194,226,255,0.5);
-    padding-bottom: 70px;
+.pricing-row{
+    background-color:rgba(255,255,255,0.5);
+    margin: 0 20px 0 20px;
+    padding: 20px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
-
-
-
-
 .test-box{
     font-family: sans-serif;
     width: 260px;
@@ -578,11 +756,27 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 .onceaweek-font{
     font-size: 26px
 }
+@media (max-width:767px) {
+      .test-box{
+    width: 180px;
+    height: 350px;
+    }
+    
+    .test-content{
+       font-size: 16px;
+    }
+    .test-bottom{
+       height: 205px;
+    }
+    .onceaweek-font{
+    font-size: 16px
+    }
+}
 
 @media (min-width:768px) and (max-width:991px){
     
     .test-box{
-    width: 220px;
+    width: 260px;
     height: 350px;
     }
     .float-right{
@@ -607,7 +801,8 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 @media (min-width:992px){
     .test-box{
         width: 200px;
-        height: 285px
+        height: 285px;
+        
     }
 
     .test-content{
@@ -645,7 +840,7 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
     
 }
 .contact-section{
-    
+    padding:100px 0;
     background-image: url(../images/homepageedit.jpg) ;
     background-position: center;
     background-attachment: fixed;
@@ -654,12 +849,18 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 .contact-opacity{
     background-color: rgba(0,0,0,0.7);
     height: 100%;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .opacity-white{
     background-color: rgba(255,255,255,.5);
     padding-bottom:20px;
     margin:0 0;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .contact-detail-table{
@@ -667,6 +868,9 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(255,255,255,0.7);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .contact-cell{
     padding-top: 0;
@@ -677,6 +881,12 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
 
 .block{
     width: 100%;
+}
+
+input {
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 input[type="text"]{
@@ -693,6 +903,9 @@ textarea{
     margin-top: 5px;
     width: 100%;
     font-size: 20px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 input[type="submit"]{
     width: 150px;
@@ -708,12 +921,13 @@ input[type="submit"]{
     
 }
 .map-cover{
-    margin-top: 50px;
+    margin: 50px;
     width: 300px;
     height: 300px;
-    display: inline-block;
+   
     border-radius: 1000px;
-   overflow: hidden;
+    
+   
 }
 
 
