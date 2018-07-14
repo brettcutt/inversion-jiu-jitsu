@@ -27,3 +27,5 @@ https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu
 The description of the academy is based from:
 http://www.sabjj.com.au/index.php/27-top-blocks/20-popularizing-and-developing-traditional-karate
 
+https://css-tricks.com/almanac/properties/s/scrollbar/
+This is for the schedule table when the overflow hidden is active and the scrollbar appears.
