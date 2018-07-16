@@ -3,25 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Bootstrap reference-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
     <!--Font awesome reference-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <!--Google font Permanent Marker and Boogaloo-->
+    <!--Google font Raleway and Roboto-->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!--css sheet reference-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
+    <!--Jquery sheet reference-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_toggle-->
+    <script>
+        $(document).ready(function() {
+            $("#dropmenu").click(function() {
+                $("#menu").toggle();
+            });
+        });
+    </script>
+
     <title>Inversion Jiu-Jitsu</title>
+
 </head>
 
 <body>
@@ -36,39 +47,39 @@
 
                 <div class="nav-dropdown-1">
 
-                    <div class="hidden-sm hidden-md hidden-lg menu-bars">
+                    <div class="hidden-sm hidden-md hidden-lg menu-bars" id="dropmenu">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
 
-                    <ul class="navigation-menu-5">
+                    <ul class="navigation-menu-5" id="menu">
                         <li>
-                            <a href="#home" >Home</a>
+                            <a href="#home">Home</a>
                         </li>
 
                         <li>
-                            <a href="#aboutus" >About Us</a>
+                            <a href="#aboutus">About Us</a>
                         </li>
 
                         <li>
-                            <a href="#schedule" >Schedule</a>
+                            <a href="#schedule">Schedule</a>
                         </li>
 
                         <li>
-                            <a href="#gallery" >Gallery</a>
+                            <a href="#gallery">Gallery</a>
                         </li>
 
                         <li>
-                            <a href="#faq" >FAQ</a>
+                            <a href="#faq">FAQ</a>
                         </li>
 
                         <li>
-                            <a href="#pricing" >Pricing</a>
+                            <a href="#pricing">Pricing</a>
                         </li>
 
                         <li>
-                            <a href="#contact" >Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
 
@@ -116,12 +127,12 @@
 
             <div class="row about-us-row">
                 <div class="col-xs-12 sub-heading-center">
-                    <h3 class="h3-heading">About Jiu-Jitsu</h3>
+                    <h3 class="h3-heading lesson-heading">About Jiu-Jitsu</h3>
                 </div>
                 <div class="col-xs-12 about-column">
                     <!--https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu-->
-                    <P class="about-jiujitsu-p">Brazilian jiu-jitsu is a martial art and combat sport system that focuses on grappling and especially ground fighting. Brazilian jiu-jitsu was formed from Kodokan judo ground fighting (newaza) fundamentals that were taught by a number
-                        of individuals including Takeo Yano, Mitsuyo Maeda and Soshihiro Satake. Brazilian jiu-jitsu eventually came to be its own combat sport through the experiments, practices, and adaptation of judo and jujutsu through Carlos and Hélio
+                    <P class="about-jiujitsu-p">Brazilian Jiu-Jitsu is a martial art and combat sport system that focuses on grappling and especially ground fighting. Brazilian Jiu-Jitsu was formed from Kodokan judo ground fighting (newaza) fundamentals that were taught by a number
+                        of individuals including Takeo Yano, Mitsuyo Maeda and Soshihiro Satake. Brazilian Jiu-Jitsu eventually came to be its own combat sport through the experiments, practices, and adaptation of judo and jujutsu through Carlos and Hélio
                         Gracie (who passed their knowledge on to their extended family) as well as other instructors who were students of Maeda, such as Luiz França.
                         <br><br> BJJ promotes the concept that a smaller, weaker person can successfully defend themselves or another against a bigger, stronger, heavier assailant by using proper technique, leverage, and most notably, taking the fight
                         to the ground, and then applying joint locks and chokeholds to defeat the opponent. BJJ training can be used for sport grappling tournaments and in self-defense situations. Sparring (commonly referred to as "rolling" within the
@@ -133,20 +144,26 @@
                     <h3 class="h3-heading">The Academy</h3>
                 </div>
 
-                <div class="col xs-12 col-sm-9 about-column">
+                <div class="col xs-12 col-sm-12 col-md-7 col-lg-8 about-column">
                     <p class="instructor-paragraph">Inversion Academy is dedicated to teaching and training the pure art of Brazilian Jiu Jitsu. Training at Inversion is suitable for people of different ages, gender and skill levels. The academy allows students to have a progressive,
                         challenging and inspiring experience, receiving high level a professional, fun, clean and safe environment.
                         <br><br> Training in Jiu Jitsu can really add something positive to your lifestyle and there is no previous experience required to start. Whether you are looking to improve fitness, learn an effective martial art, play a sport
                         or be part of a social team environment, we are sure you will gain the skills and benefits that will allow you to achieve your goals whilst having fun along the journey.</p>
                 </div>
-                <div class="col-sm-3 Academy-image"></div>
+                <div class="col-xs-12 col-md-5 col-lg-4 image-outer-container">
+                    <div class="academy-image"></div>
+                </div>
             </div>
             <div class="row about-us-row">
                 <div class="col-xs-12 sub-heading-center">
                     <h3 class="h3-heading">The Instructor</h3>
                 </div>
-                <div class="col-xs-12 col-sm-3 instructor-image"></div>
-                <div class="col xs-12 col-sm-9 about-column">
+                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                    <div class="outer-image-container">
+                        <div class="instructor-html"><img class="instructor-image" src="assets/images/b-instructor.jpg" alt="The instructor"></div>
+                    </div>
+                </div>
+                <div class="col xs-12 col-sm-12 col-md-8 about-column about-instructor-column">
                     <p class="instructor-paragraph"> Wade Kumar: Brown Belt under Professor Thiago Santos, a 4th degree Black Belt. Wade began training Jiu Jitsu in the year 2009 and has been teaching the Art of Jiu Jitsu since 2014. Wade began competing in Jiu Jitsu competitions since
                         2010. As well as teaching full time, Wade continues to compete in all major competitions throughout the year both nationally and internationally. </p>
                     <ul class="instructor-achievements">
@@ -194,16 +211,15 @@
             <div class="row class-info-row">
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-xs-12 sub-heading-center">
-                        <h3 class="h3-heading h3-box">Jiu-Jitsu For Kids</h3>
+                        <h3 class="h3-heading h3-box lesson-heading">Jiu-Jitsu<br> For Kids</h3>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 class-text">
                         <p class="fundamentals-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint oc
+                            Our kids classes are for ages between 5 and 14 years. The classes run every Wednesday and Friday after school hours between 17.00 and 18.00. They will take part in a warm up, learn basic Jiu-Jitsu postioning, submission control and followed by supervised
+                            drilling.
                         </p>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="col-xs-12 text-center">
+                        <br>
+                        <div class="col-xs-12 text-center color-legend-container">
                             <div class="color-legend yellow-legend"></div>
                         </div>
                     </div>
@@ -211,16 +227,15 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-xs-12 sub-heading-center">
-                        <h3 class="h3-heading h3-box">Jiu-Jitsu Fundamentals</h3>
+                        <h3 class="h3-heading h3-box lesson-heading">Jiu-Jitsu Fundamentals</h3>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 class-text">
                         <p class="Advanced-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint oc
+                            The fundamentals class is for everyone to join, however it is more focused on new practitioners to the art and those learning the basics. During these lessons you will be led through a warm up, instructed in the basics of position and submission control,
+                            drilling of the techniques and lastly rolling (sparring) with what time remains.
                         </p>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="col-xs-12 text-center">
+                        <br>
+                        <div class="col-xs-12 text-center color-legend-container">
                             <div class="color-legend blue-legend"></div>
                         </div>
                     </div>
@@ -228,17 +243,15 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-xs-12 sub-heading-center">
-                        <h3 class="h3-heading h3-box">Advanced Jiu-Jitsu</h3>
+                        <h3 class="h3-heading h3-box lesson-heading">Advanced <br>Jiu-Jitsu</h3>
                     </div>
-                    <div class="col-xs-12">
-
+                    <div class="col-xs-12 class-text">
                         <p class="for-kids-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint oc
+                            The advanced class is for practitioners with basic knowledge and experience in jiu-jitsu, and are ready for some more advanced techniques. The lesson will include a warm up, instruction in advanced position and submission control, drilling of the techniques
+                            and rolling (sparring).
                         </p>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="col-xs-12 text-center">
+                        <br>
+                        <div class="col-xs-12 text-center color-legend-container">
                             <div class="color-legend purple-legend"></div>
                         </div>
                     </div>
@@ -246,16 +259,14 @@
 
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="col-xs-12 sub-heading-center">
-                        <h3 class="h3-heading h3-box">Open Mat</h3>
+                        <h3 class="h3-heading h3-box lesson-heading">Open<br> Mat </h3>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 class-text">
                         <p class="open-mat-text text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint oc
+                            The open mat session is open to everyone where you are free do what you like. It's always advisable to warm up first, then you may work on techniques with a partner or even just roll the whole time, it's up to you.
                         </p>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="col-xs-12 text-center">
+                        <br>
+                        <div class="col-xs-12 text-center color-legend-container">
                             <div class="color-legend brown-legend"></div>
                         </div>
                     </div>
@@ -400,6 +411,8 @@
 
     <!--************************************Gallery******************************************************************************-->
     <section class="container-fluid gallery-pricing-faq-section">
+        
+        
         <div class="container gallery-pricing-faq-inner-container">
             <section class="container-fluid gallery-section">
 
@@ -417,7 +430,7 @@
                     <div class="gallery-container">
                         <div class="mySlides">
                             <div class="numbertext">1 / 6</div>
-                            <img class="image-width" src="assets/images/l-t-rolling.jpg" style="width:100%" alt="about to get the back control position">
+                            <img class="image-width" src="assets/images/l-t-rolling.jpg" style="width:100%" alt="Preparing to get the back control position">
                         </div>
 
                         <div class="mySlides">
@@ -437,7 +450,7 @@
 
                         <div class="mySlides">
                             <div class="numbertext">5 / 6</div>
-                            <img src="assets/images/b-l-backcontrol.jpg" style="width:100%" alt="going for a bow and arrow submission">
+                            <img src="assets/images/b-l-backcontrol.jpg" style="width:100%" alt="Attempting a bow and arrow submission">
                         </div>
 
                         <div class="mySlides">
@@ -454,22 +467,22 @@
 
                         <div class="row image-row">
                             <div class="column">
-                                <img class="demo cursor" src="assets/images/l-t-rolling.jpg" style="width:100%" onclick="currentSlide(1)" alt="about to get the back control position">
+                                <img class="demo cursor" src="assets/images/l-t-rolling.jpg" style="width:100%" onclick="currentSlide(1)" alt="Preparing to get the back control position">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="assets/images/r-y-rolling.jpg" style="width:100%" onclick="currentSlide(2)" alt="open guard">
+                                <img class="demo cursor" src="assets/images/r-y-rolling.jpg" style="width:100%" onclick="currentSlide(2)" alt="Open guard">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="assets/images/r-t-sitting.jpg" style="width:100%" onclick="currentSlide(3)" alt="neutral seated position">
+                                <img class="demo cursor" src="assets/images/r-t-sitting.jpg" style="width:100%" onclick="currentSlide(3)" alt="Neutral seated position">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="assets/images/r-t-backcontrol.jpg" style="width:100%" onclick="currentSlide(4)" alt="back mount">
+                                <img class="demo cursor" src="assets/images/r-t-backcontrol.jpg" style="width:100%" onclick="currentSlide(4)" alt="Back mount">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="assets/images/b-l-backcontrol.jpg" style="width:100%" onclick="currentSlide(5)" alt="going for a bow and arrow submission">
+                                <img class="demo cursor" src="assets/images/b-l-backcontrol.jpg" style="width:100%" onclick="currentSlide(5)" alt="Attempting a bow and arrow submission">
                             </div>
                             <div class="column">
-                                <img class="demo cursor" src="assets/images/s-j-rolling.jpg" style="width:100%" onclick="currentSlide(6)" alt="open guard">
+                                <img class="demo cursor" src="assets/images/s-j-rolling.jpg" style="width:100%" onclick="currentSlide(6)" alt="Open guard">
                             </div>
                         </div>
                     </div>
@@ -510,12 +523,12 @@
 
                         <button class="accordion">Can I get hurt?</button>
                         <div class="panel">
-                            <p>Jiu-Jitsu is in a very controlled martial art. However, with any martial art there is a chance of injury.</p>
+                            <p>Jiu-Jitsu is a very controlled martial art. However, with any martial art there is a chance of injury.</p>
                         </div>
 
-                        <button class="accordion">How can I recieve my next belt?</button>
+                        <button class="accordion">How can I receive my next belt?</button>
                         <div class="panel">
-                            <p>You have show that you can perform at a level higher than your current belt level. Other parts that contribute are how often students participate in class and in competition.</p>
+                            <p>You have to show that you can perform at a level higher than your current belt level. Other parts that contribute are how often students participate in classes and in competition.</p>
                         </div>
 
                         <button class="accordion">What facilities do you have?</button>
@@ -541,59 +554,59 @@
 
                     <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
                         <div class="text-center">
-                            <div class="test-box float-right">
-                                <div class="test-content strong-box">
-                                    <p>$50</p>
+                            <div class="pricing-box float-right">
+                                <div class="pricing-content strong-box">
+                                    <p class="pricing-line-height">$50 / hr</p>
                                 </div>
-                                <div class="test-content strong-box">
-                                    <p>Private</p>
+                                <div class="pricing-content strong-box">
+                                    <p class="pricing-line-height">Private</p>
                                 </div>
-                                <div class="test-content test-bottom">
-                                    <p>With a private lesson we will work on any technique that you or your instructor feels needs improvement. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
-                        <div class="text-center">
-                            <div class="test-box float-left">
-                                <div class="test-content strong-box">
-                                    <p>$25</p>
-                                </div>
-                                <div class="test-content strong-box">
-                                    <p>Casual</p>
-                                </div>
-                                <div class="test-content test-bottom">
-                                    <p>Don't always have time or have a irregular schedule. Than pick casual to come when you have the time. </p>
+                                <div class="pricing-content pricing-bottom">
+                                    <p>With a Private lesson we will work on any technique that you or your instructor feels needs improvement. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
                         <div class="text-center">
-                            <div class="test-box float-right special-color">
-                                <div class="test-content strong-box ">
-                                    <p>$120</p>
+                            <div class="pricing-box float-left">
+                                <div class="pricing-content strong-box">
+                                    <p class="pricing-line-height">$25 / lesson</p>
                                 </div>
-                                <div class="test-content strong-box">
-                                    <p>Unlimited</p>
+                                <div class="pricing-content strong-box">
+                                    <p class="pricing-line-height">Casual</p>
                                 </div>
-                                <div class="test-content test-bottom">
-                                    <p>If you're serious about Jiu-Jitsu and want to join as many sessions as you can in the week than unlimited is the perfect option. </p>
+                                <div class="pricing-content pricing-bottom">
+                                    <p>If you don't always have time or have an irregular schedule. Than pick Casual to come when you do have the time. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
                         <div class="text-center">
-                            <div class="test-box float-left">
-                                <div class="test-content strong-box">
-                                    <p>$80</p>
+                            <div class="pricing-box float-right special-color">
+                                <div class="pricing-content strong-box ">
+                                    <p class="pricing-line-height">$120 / mo</p>
                                 </div>
-                                <div class="test-content strong-box">
-                                    <p class="onceaweek-font">Once a Week</p>
+                                <div class="pricing-content strong-box">
+                                    <p class="pricing-line-height">Unlimited</p>
                                 </div>
-                                <div class="test-content test-bottom">
+                                <div class="pricing-content pricing-bottom">
+                                    <p>If you're serious about Jiu-Jitsu and want to join as many sessions as you can in the week than Unlimited is the perfect option. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
+                        <div class="text-center">
+                            <div class="pricing-box float-left">
+                                <div class="pricing-content strong-box">
+                                    <p class="pricing-line-height">$80 / mo</p>
+                                </div>
+                                <div class="pricing-content strong-box">
+                                    <p class="onceaweek-font pricing-line-height">Once a Week</p>
+                                </div>
+                                <div class="pricing-content pricing-bottom">
                                     <p>For those who only want to train once a week. </p>
                                 </div>
                             </div>
@@ -602,37 +615,41 @@
                 </div>
             </section>
         </div>
+        <div class="hidden-xs hidden-sm hidden-md hidden-lg">
+            <h6>heading so w3c won't give a warning</h6>
+        </div>
     </section>
 
     <!--************************************Pricing******************************************************************************-->
-    <section class="container-fluid section-separator"></section>
     <!--************************************contact******************************************************************************-->
 
     <section class="contact-section container-fluid">
+        
         <div class="container contact-opacity">
-            <span id="contact"></span>
 
-            <div class="row">
+
+            <div class="row no-margin">
                 <div class="col-xs-12 sub-heading-center">
-                    <h2 class="h2-heading">Contact</h2>
+                    <span id="contact"></span>
+                    <h2 class="contact-heading h2-heading">Contact</h2>
                 </div>
             </div>
             <div class="row opacity-white">
-                <div class="col-xs-12 col-sm-6 ">
+                <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="row">
                         <div class="col-xs-12 text-center no-padding">
                             <div class="contact-h3 h3-heading">
                                 <h3><b>Academy Details</b></h3>
                             </div>
                             <div>
-                                <table class="contact-detail-table no-padding">
+                                <table class="contact-detail-table">
                                     <tr>
 
                                         <td class="contact-cell">
-                                            <p><i class="fas fa-home"></i></p><br><br>
+                                            <p><br><i class="fas fa-home padding-5"></i></p><br><br>
                                         </td>
                                         <td class="contact-cell">
-                                            <p><b>Address:</b></p><br><br>
+                                            <p><b><br>Address:</b></p><br><br>
                                         </td>
                                         <td class="contact-cell">
                                             <p>276D McLaughlin Route <br> Port Broderick,<br> SA 2528</p>
@@ -641,7 +658,7 @@
 
                                     <tr>
                                         <td class="contact-cell">
-                                            <p><i class="fas fa-phone"></i></p>
+                                            <p><i class="fas fa-phone padding-5"></i></p>
                                         </td>
                                         <td class="contact-cell">
                                             <p><b>Phone:</b></p>
@@ -653,7 +670,7 @@
 
                                     <tr>
                                         <td class="contact-cell">
-                                            <p><i class="far fa-envelope"></i></p>
+                                            <p><i class="far fa-envelope padding-5"></i></p>
                                         </td>
                                         <td class="contact-cell">
                                             <p><b>Email:</b></p>
@@ -667,28 +684,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 text-center">
-                    <div class="contact-h3 text-center h3-heading">
-                        <h3><b>Send us a message</b></h3>
+
+
+
+
+                <div class="row no-margin">
+                    <div class="col-xs-12">
+                        <div class="col-xs-12 col-sm-12 col-md-6 text-center">
+                            <div class="contact-h3 text-center h3-heading">
+                                <h3><b>Send us a message</b></h3>
+                            </div>
+                            <div class="block">
+                                <form action="#" method="post">
+                                    <input type="text" name="name" id="name" placeholder="Name" required/>
+                                    <input type="email" name="email" id="email" placeholder="email" required/><br>
+                                    <textarea rows="4" name="message" id="massage" placeholder="message" required></textarea><br>
+                                    <input type="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="block">
-                        <form action="#" method="post">
-                            <input type="text" name="name" id="name" placeholder="Name" required/>
-                            <input type="email" name="email" id="email" placeholder="email" required/><br>
-                            <textarea rows="7" name="message" id="massage" placeholder="message" required></textarea><br>
-                            <input type="submit" value="Submit" />
-                        </form>
+                </div>
+                
+                <div class="col-xs-12 col-sm-12 text-center a">
+                    <div class=" no-padding map-outer-container">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3273.4360947450377!2d138.63722329258113!3d-34.87039399773799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1531043627247" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
 
             </div>
-            <div class="row map-row">
-                <div class="col-xs-6 col-xs-offset-3 text-center no-padding">
-                    
-                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3273.4360947450377!2d138.63722329258113!3d-34.87039399773799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1531043627247" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    
-                </div>
-            </div>
+
         </div>
     </section>
     <!--************************************Contact******************************************************************************-->
@@ -697,20 +722,28 @@
     <footer class="container-fluid">
         <div class="row footer-row heading-row-no-side-margin">
             <div class="col-xs-12 footer-column ">
+                
+                <div class="col-xs-12  col-sm-12 col-md-offset-3 col-md-6">
                 <ul class="socialmedia-ul">
-                    <li class="socialmedia-li"><a href="" class="socialmedia-link"><i class="fab fa-instagram"></i></a></li>
-                    <li class="socialmedia-li"><a href="" class="socialmedia-link"><i class="fab fa-twitter"></i></a></li>
-                    <li class="socialmedia-li"><a href="" class="socialmedia-link"><i class="fab fa-youtube"></i></a></li>
-                    <li class="socialmedia-li"><a href="" class="socialmedia-link"><i class="fab fa-facebook"></i></a></li>
-                    <li class="socialmedia-li"><a href="" class="socialmedia-link"><i class="fab fa-snapchat-ghost"></i></a></li>
+                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-instagram"></i></a></li>
+                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-youtube"></i></a></li>
+                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-facebook"></i></a></li>
+                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-snapchat-ghost"></i></a></li>
                 </ul>
+                </div>
+                <div class="com-xs-12 col-sm-12 col-md-3">
+                    <div class="copywrite-text">
+                        <p>©2018 Inversion Jiu-Jitsu All Rights Reserved | web development by Brett Cutting</p>
+                    </div>
+                </div>
 
             </div>
         </div>
 
     </footer>
     <!--************************************Footer******************************************************************************-->
-    <!--slideshow is from the below reference and in between comments-->
+
     <!--https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
     <script>
         var slideIndex = 1;
@@ -742,7 +775,6 @@
             captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
-    <!--https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
 
     <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
     <script>
@@ -762,8 +794,6 @@
             });
         }
     </script>
-    <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
-
 
 </body>
 
