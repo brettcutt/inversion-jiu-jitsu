@@ -112,13 +112,13 @@ close to the bottom of the page to encourage visitors to view the other page con
 
 ### Wire frame:
 
-- ![home section](assets/images/index.png)
-- ![about section](assets/images/about.png)
-- ![schedule section](assets/images/schedule.png)
-- ![gallery section](assets/images/gallery.png)
-- ![faq section](assets/images/faq.png)
-- ![pricing section](assets/images/pricing.png)
-- ![contact section](assets/images/contact.png)
+- ![home section](assets/wire-frames/index.png)
+- ![about section](assets/wire-frames/about.png)
+- ![schedule section](assets/wire-frames/schedule.png)
+- ![gallery section](assets/wire-frames/gallery.png)
+- ![faq section](assets/wire-frames/faq.png)
+- ![pricing section](assets/wire-frames/pricing.png)
+- ![contact section](assets/wire-frames/contact.png)
 
 
 ## Testing
