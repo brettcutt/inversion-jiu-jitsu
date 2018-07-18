@@ -136,6 +136,16 @@
  
  - I originally made up a good desktop responsive photo gallery however it wasn't so much in the tablet and mobile device modes.
  I chose to go for a sliding gallery from w3schools in the end.
+
+- I built the navigation bar myself making it responsive on all devices, however the hover function didn't seem to be the appropriate action to
+deploy the drop down menu on mobile devices. I ended up getting a jquery code from w3c schools for a click to show and hide function.
+One problem I came across with this was, if I clicked to show the menu on mobile then clicked again to hide the menu, and then switched to a landscape
+mobile position, tablet device or desktop mode, the navigation bar was hidden. To combat this I copy and pasted the
+navigation menu with all its content to create a second one. I than changed that menu to hidden on sm, md and lg and changed the original navigation
+menu to hidden xs and deleted the id linking it to the jquery code.
+
+- I also noticed that when I clicked the drop down list item, the menu stayed showing. I got another jquery code for this to hide the menu on a clicked
+list item.
  
  ### Edge: 
  

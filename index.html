@@ -30,6 +30,14 @@
             });
         });
     </script>
+    
+    <script>
+$(document).ready(function(){
+    $("#mobile-link, #mobile-link-2, #mobile-link-3, #mobile-link-4, #mobile-link-5, #mobile-link-6, #mobile-link-7").click(function(){
+        $("#menu").hide();
+    });
+});
+</script>
 
     <title>Inversion Jiu-Jitsu</title>
 
@@ -52,8 +60,8 @@
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
-
-                    <ul class="navigation-menu-5" id="menu">
+                    <!--************************************sm md lg nav menu**********************************-->
+                    <ul class="navigation-menu-5 hidden-xs">
                         <li>
                             <a href="#home">Home</a>
                         </li>
@@ -82,7 +90,38 @@
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
+                    <!--************************************sm md lg nav menu**********************************-->
+                    <!--************************************xs nav menu**********************************-->
+                    <ul class="navigation-menu-mobile hidden-sm hidden-md hidden-lg" id="menu">
+                        <li id="mobile-link">
+                            <a href="#home">Home</a>
+                        </li>
 
+                        <li id="mobile-link-2">
+                            <a href="#aboutus">About Us</a>
+                        </li>
+
+                        <li id="mobile-link-3">
+                            <a href="#schedule">Schedule</a>
+                        </li>
+
+                        <li id="mobile-link-4">
+                            <a href="#gallery">Gallery</a>
+                        </li>
+
+                        <li id="mobile-link-5">
+                            <a href="#faq">FAQ</a>
+                        </li>
+
+                        <li id="mobile-link-6">
+                            <a href="#pricing">Pricing</a>
+                        </li>
+
+                        <li id="mobile-link-7">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!--************************************xs nav menu**********************************-->
                 </div>
             </nav>
 
@@ -117,80 +156,80 @@
     <!--************************************about us******************************************************************************-->
 
     <section class=" container-fluid about-us-container-fluid">
-         <div class="container-fluid about-us-background-opacity">
-        <div class="about-us-section container">
-            <span id="aboutus"></span>
-            <div class="row about-us-heading">
-                <div class="col-xs-12 sub-heading-center">
-                    <h2 class="h2-heading about-us-heading">About Us</h2>
-                </div>
-            </div>
-
-            <div class="row about-us-row">
-                <div class="col-xs-12 sub-heading-center">
-                    <h3 class="h3-heading ">About Jiu-Jitsu</h3>
-                </div>
-                <div class="col-xs-12 about-column">
-                    <!--https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu-->
-                    <P class="about-jiujitsu-p">Brazilian Jiu-Jitsu is a martial art and combat sport system that focuses on grappling and especially ground fighting. Brazilian Jiu-Jitsu was formed from Kodokan judo ground fighting (newaza) fundamentals that were taught by a number
-                        of individuals including Takeo Yano, Mitsuyo Maeda and Soshihiro Satake. Brazilian Jiu-Jitsu eventually came to be its own combat sport through the experiments, practices, and adaptation of judo and jujutsu through Carlos and Hélio
-                        Gracie (who passed their knowledge on to their extended family) as well as other instructors who were students of Maeda, such as Luiz França.
-                        <br><br> BJJ promotes the concept that a smaller, weaker person can successfully defend themselves or another against a bigger, stronger, heavier assailant by using proper technique, leverage, and most notably, taking the fight
-                        to the ground, and then applying joint locks and chokeholds to defeat the opponent. BJJ training can be used for sport grappling tournaments and in self-defense situations. Sparring (commonly referred to as "rolling" within the
-                        BJJ community) and live drilling play a major role in training, and a premium is placed on performance, especially in competition, in relation to progress and ascension through its ranking system.</P>
-                </div>
-            </div>
-            <div class="row about-us-row">
-                <div class="col-xs-12 sub-heading-center">
-                    <h3 class="h3-heading">The Academy</h3>
-                </div>
-
-                <div class="col xs-12 col-sm-12 col-md-7 col-lg-8 about-column">
-                    <p class="instructor-paragraph">Inversion Academy is dedicated to teaching and training the pure art of Brazilian Jiu Jitsu. Training at Inversion is suitable for people of different ages, gender and skill levels. The academy allows students to have a progressive,
-                        challenging and inspiring experience, receiving high level a professional, fun, clean and safe environment.
-                        <br><br> Training in Jiu Jitsu can really add something positive to your lifestyle and there is no previous experience required to start. Whether you are looking to improve fitness, learn an effective martial art, play a sport
-                        or be part of a social team environment, we are sure you will gain the skills and benefits that will allow you to achieve your goals whilst having fun along the journey.</p>
-                </div>
-                <div class="col-xs-12 col-md-5 col-lg-4 image-outer-container">
-                    <div class="academy-image"></div>
-                </div>
-            </div>
-            <div class="row about-us-row">
-                <div class="col-xs-12 sub-heading-center">
-                    <h3 class="h3-heading">The Instructor</h3>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 text-center">
-                    <div class="outer-image-container">
-                        <div class="instructor-html"><img class="instructor-image" src="assets/images/b-instructor.jpg" alt="The instructor"></div>
+        <div class="container-fluid about-us-background-opacity">
+            <div class="about-us-section container">
+                <span id="aboutus"></span>
+                <div class="row about-us-heading">
+                    <div class="col-xs-12 sub-heading-center">
+                        <h2 class="h2-heading about-us-heading">About Us</h2>
                     </div>
                 </div>
-                <div class="col xs-12 col-sm-12 col-md-8 about-column about-instructor-column">
-                    <p class="instructor-paragraph"> Bruce Allen: Brown Belt under Professor Thiago Santos, a 4th degree Black Belt. Bruce began training Jiu Jitsu in the year 2009 and has been teaching the Art of Jiu Jitsu since 2014. Bruce began competing in Jiu Jitsu competitions since
-                        2010. As well as teaching full time, Wade continues to compete in all major competitions throughout the year both nationally and internationally. </p>
-                    <ul class="instructor-achievements">
-                        <li>2018 | Brown Belt | IBJJF Rio Brazil Open | under 73kg | competitor</li>
-                        <li>2018 | Brown Belt | CBJJE Sao Paulo Brazil |under 73kg | competitor</li>
-                        <li>2017 | Brown Belt | Pan Pacific Championship | under 73kg | gi & no gi champion</li>
-                        <li>2017 | Brown Belt | Victorian Championships | under 73kg | gi & no gi champion</li>
-                        <li>2017 | Brown Belt | Aus Cup | under 73kg | gi & no gi champion</li>
-                        <li>2016 | Brown Belt | Pan Pacific Championship | under 73kg | gi champion</li>
-                        <li>2016 | Purple Belt | Victorian Championships | under 85kg | gi 2nd</li>
-                        <li>2016 | Purple Belt | Aus Cup | open weight | gi & no gi 2nd</li>
-                        <li>2015 | Purple Belt | Victorian Championships | under 85kg | gi 3rd</li>
-                        <li>2015 | Purple Belt | Pan Pacific Championship | under 85kg | 2nd</li>
-                        <li>2014 | Purple Belt | Pan Pacific Championship | under 85kg | 2nd</li>
-                        <li>2014 | Purple Belt | Pan Pacific Championships | under 85kg 3rd</li>
-                        <li>2014 | Purple Belt | Victorian Championships | under 73kg | gi champion</li>
-                        <li>2013 | Purple Belt | Pan Pacific Championships | under 73kg | gi 3rd</li>
-                        <li>2013 | Purple Belt | Victorian Championship | under 73kg | gi champion</li>
-                    </ul>
 
+                <div class="row about-us-row">
+                    <div class="col-xs-12 sub-heading-center">
+                        <h3 class="h3-heading ">About Jiu-Jitsu</h3>
+                    </div>
+                    <div class="col-xs-12 about-column">
+                        <!--https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu-->
+                        <P class="about-jiujitsu-p">Brazilian Jiu-Jitsu is a martial art and combat sport system that focuses on grappling and especially ground fighting. Brazilian Jiu-Jitsu was formed from Kodokan judo ground fighting (newaza) fundamentals that were taught by a
+                            number of individuals including Takeo Yano, Mitsuyo Maeda and Soshihiro Satake. Brazilian Jiu-Jitsu eventually came to be its own combat sport through the experiments, practices, and adaptation of judo and jujutsu through Carlos
+                            and Hélio Gracie (who passed their knowledge on to their extended family) as well as other instructors who were students of Maeda, such as Luiz França.
+                            <br><br> BJJ promotes the concept that a smaller, weaker person can successfully defend themselves or another against a bigger, stronger, heavier assailant by using proper technique, leverage, and most notably, taking the fight
+                            to the ground, and then applying joint locks and chokeholds to defeat the opponent. BJJ training can be used for sport grappling tournaments and in self-defense situations. Sparring (commonly referred to as "rolling" within
+                            the BJJ community) and live drilling play a major role in training, and a premium is placed on performance, especially in competition, in relation to progress and ascension through its ranking system.</P>
+                    </div>
                 </div>
+                <div class="row about-us-row">
+                    <div class="col-xs-12 sub-heading-center">
+                        <h3 class="h3-heading">The Academy</h3>
+                    </div>
+
+                    <div class="col xs-12 col-sm-12 col-md-7 col-lg-8 about-column">
+                        <p class="instructor-paragraph">Inversion Academy is dedicated to teaching and training the pure art of Brazilian Jiu Jitsu. Training at Inversion is suitable for people of different ages, gender and skill levels. The academy allows students to have a progressive,
+                            challenging and inspiring experience, receiving high level a professional, fun, clean and safe environment.
+                            <br><br> Training in Jiu Jitsu can really add something positive to your lifestyle and there is no previous experience required to start. Whether you are looking to improve fitness, learn an effective martial art, play a sport
+                            or be part of a social team environment, we are sure you will gain the skills and benefits that will allow you to achieve your goals whilst having fun along the journey.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-lg-4 image-outer-container">
+                        <div class="academy-image"></div>
+                    </div>
+                </div>
+                <div class="row about-us-row">
+                    <div class="col-xs-12 sub-heading-center">
+                        <h3 class="h3-heading">The Instructor</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 text-center">
+                        <div class="outer-image-container">
+                            <div class="instructor-html"><img class="instructor-image" src="assets/images/b-instructor.jpg" alt="The instructor"></div>
+                        </div>
+                    </div>
+                    <div class="col xs-12 col-sm-12 col-md-8 about-column about-instructor-column">
+                        <p class="instructor-paragraph"> Bruce Allen: Brown Belt under Professor Thiago Santos, a 4th degree Black Belt. Bruce began training Jiu Jitsu in the year 2009 and has been teaching the Art of Jiu Jitsu since 2014. Bruce began competing in Jiu Jitsu competitions
+                            since 2010. As well as teaching full time, Wade continues to compete in all major competitions throughout the year both nationally and internationally. </p>
+                        <ul class="instructor-achievements">
+                            <li>2018 | Brown Belt | IBJJF Rio Brazil Open | under 73kg | competitor</li>
+                            <li>2018 | Brown Belt | CBJJE Sao Paulo Brazil |under 73kg | competitor</li>
+                            <li>2017 | Brown Belt | Pan Pacific Championship | under 73kg | gi & no gi champion</li>
+                            <li>2017 | Brown Belt | Victorian Championships | under 73kg | gi & no gi champion</li>
+                            <li>2017 | Brown Belt | Aus Cup | under 73kg | gi & no gi champion</li>
+                            <li>2016 | Brown Belt | Pan Pacific Championship | under 73kg | gi champion</li>
+                            <li>2016 | Purple Belt | Victorian Championships | under 85kg | gi 2nd</li>
+                            <li>2016 | Purple Belt | Aus Cup | open weight | gi & no gi 2nd</li>
+                            <li>2015 | Purple Belt | Victorian Championships | under 85kg | gi 3rd</li>
+                            <li>2015 | Purple Belt | Pan Pacific Championship | under 85kg | 2nd</li>
+                            <li>2014 | Purple Belt | Pan Pacific Championship | under 85kg | 2nd</li>
+                            <li>2014 | Purple Belt | Pan Pacific Championships | under 85kg 3rd</li>
+                            <li>2014 | Purple Belt | Victorian Championships | under 73kg | gi champion</li>
+                            <li>2013 | Purple Belt | Pan Pacific Championships | under 73kg | gi 3rd</li>
+                            <li>2013 | Purple Belt | Victorian Championship | under 73kg | gi champion</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
             </div>
-
-
-
-        </div>
         </div>
     </section>
 
@@ -414,213 +453,211 @@
     <!--************************************Gallery******************************************************************************-->
     <section class="container-fluid gallery-pricing-faq-section">
         <div class="container-fluid gallery-pricing-faq-opacity ">
-        
-        
-        <div class="container gallery-pricing-faq-inner-container">
-            <section class="container-fluid gallery-section">
+            <div class="container gallery-pricing-faq-inner-container">
+                <section class="container-fluid gallery-section">
 
-                <span id="gallery"></span>
-                <div class="row">
-                    <div class="col-xs-12 sub-heading-center">
-                        <h2 class="h2-heading">Gallery</h2>
-                    </div>
-                </div>
-
-                <!--slideshow is from the below reference and in between comments-->
-                <!--https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
-                <div class="row gallery-row">
-
-                    <div class="gallery-container">
-                        <div class="mySlides">
-                            <div class="numbertext">1 / 6</div>
-                            <img class="image-width" src="assets/images/l-t-rolling.jpg" style="width:100%" alt="Preparing to get the back control position">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">2 / 6</div>
-                            <img src="assets/images/r-y-rolling.jpg" style="width:100%" alt="open guard">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">3 / 6</div>
-                            <img src="assets/images/r-t-sitting.jpg" style="width:100%" alt="neutral seated position">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">4 / 6</div>
-                            <img src="assets/images/r-t-backcontrol.jpg" style="width:100%" alt="back mount">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">5 / 6</div>
-                            <img src="assets/images/b-l-backcontrol.jpg" style="width:100%" alt="Attempting a bow and arrow submission">
-                        </div>
-
-                        <div class="mySlides">
-                            <div class="numbertext">6 / 6</div>
-                            <img src="assets/images/s-j-rolling.jpg" style="width:100%" alt="open guard">
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-
-                        <div class="caption-container">
-                            <p id="caption"></p>
-                        </div>
-
-                        <div class="row image-row">
-                            <div class="column">
-                                <img class="demo cursor" src="assets/images/l-t-rolling.jpg" style="width:100%" onclick="currentSlide(1)" alt="Preparing to get the back control position">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/images/r-y-rolling.jpg" style="width:100%" onclick="currentSlide(2)" alt="Open guard">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/images/r-t-sitting.jpg" style="width:100%" onclick="currentSlide(3)" alt="Neutral seated position">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/images/r-t-backcontrol.jpg" style="width:100%" onclick="currentSlide(4)" alt="Back mount">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/images/b-l-backcontrol.jpg" style="width:100%" onclick="currentSlide(5)" alt="Attempting a bow and arrow submission">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/images/s-j-rolling.jpg" style="width:100%" onclick="currentSlide(6)" alt="Open guard">
-                            </div>
+                    <span id="gallery"></span>
+                    <div class="row">
+                        <div class="col-xs-12 sub-heading-center">
+                            <h2 class="h2-heading">Gallery</h2>
                         </div>
                     </div>
-                </div>
-                <!--https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
-            </section>
-            <!--************************************Gallery******************************************************************************-->
-            <!--************************************FAQ******************************************************************************-->
 
-            <section class="container-fluid faq-section">
-                <span id="faq"></span>
-                <div class="row">
-                    <div class="col-xs-12 sub-heading-center">
-                        <h2 class="h2-heading">FAQ</h2>
-                    </div>
-                </div>
+                    <!--slideshow is from the below reference and in between comments-->
+                    <!--https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
+                    <div class="row gallery-row">
 
-                <div class="row accordion-row">
-                    <div class="col-xs-12 col-sm-6 col md-6 text-center faq-column">
+                        <div class="gallery-container">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img class="image-width" src="assets/images/l-t-rolling.jpg" style="width:100%" alt="Preparing to get the back control position">
+                            </div>
 
-                        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
-                        <button class="accordion">How old does my child need to be to start?</button>
-                        <div class="panel">
-                            <p>Children as young as five years of age are allowed to participate in the childrens class.</p>
-                        </div>
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="assets/images/r-y-rolling.jpg" style="width:100%" alt="open guard">
+                            </div>
 
-                        <button class="accordion">What should I bring to the sessions?</button>
-                        <div class="panel">
-                            <p>You should bring a freshly washed gi/ no-gi rash top and shorts, a mouth guard and water bottle. </p>
-                        </div>
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="assets/images/r-t-sitting.jpg" style="width:100%" alt="neutral seated position">
+                            </div>
 
-                        <button class="accordion">Can friends and family watch?</button>
-                        <div class="panel">
-                            <p>Yes, we have a spectating area for any friends and familiy of the students.</p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col md-6 text-center faq-column">
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="assets/images/r-t-backcontrol.jpg" style="width:100%" alt="back mount">
+                            </div>
 
-                        <button class="accordion">Can I get hurt?</button>
-                        <div class="panel">
-                            <p>Jiu-Jitsu is a very controlled martial art. However, with any martial art there is a chance of injury.</p>
-                        </div>
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="assets/images/b-l-backcontrol.jpg" style="width:100%" alt="Attempting a bow and arrow submission">
+                            </div>
 
-                        <button class="accordion">How can I receive my next belt?</button>
-                        <div class="panel">
-                            <p>You have to show that you can perform at a level higher than your current belt level. Other parts that contribute are how often students participate in classes and in competition.</p>
-                        </div>
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="assets/images/s-j-rolling.jpg" style="width:100%" alt="open guard">
+                            </div>
 
-                        <button class="accordion">What facilities do you have?</button>
-                        <div class="panel">
-                            <p>The academy had a large mat area, male and female toilets, showers and change rooms. There is also a small resting area with a water dispenser.</p>
-                        </div>
-                        <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
-                    </div>
-                </div>
-            </section>
-            <!--************************************FAQ******************************************************************************-->
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
 
-            <!--************************************Pricing******************************************************************************-->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
 
-            <Section class="container-fluid pricing-section">
-                <span id="pricing"></span>
-                <div class="row">
-                    <div class="col-xs-12 sub-heading-center">
-                        <h2 class="h2-heading">Pricing</h2>
-                    </div>
-                </div>
-                <div class="row pricing-row">
-
-                    <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
-                        <div class="text-center">
-                            <div class="pricing-box float-right">
-                                <div class="pricing-content strong-box">
-                                    <p class="pricing-line-height">$50 / hr</p>
+                            <div class="row image-row">
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/images/l-t-rolling.jpg" style="width:100%" onclick="currentSlide(1)" alt="Preparing to get the back control position">
                                 </div>
-                                <div class="pricing-content strong-box">
-                                    <p class="pricing-line-height">Private</p>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/images/r-y-rolling.jpg" style="width:100%" onclick="currentSlide(2)" alt="Open guard">
                                 </div>
-                                <div class="pricing-content pricing-bottom">
-                                    <p>With a Private lesson we will work on any technique that you or your instructor feels needs improvement. </p>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/images/r-t-sitting.jpg" style="width:100%" onclick="currentSlide(3)" alt="Neutral seated position">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/images/r-t-backcontrol.jpg" style="width:100%" onclick="currentSlide(4)" alt="Back mount">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/images/b-l-backcontrol.jpg" style="width:100%" onclick="currentSlide(5)" alt="Attempting a bow and arrow submission">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/images/s-j-rolling.jpg" style="width:100%" onclick="currentSlide(6)" alt="Open guard">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
-                        <div class="text-center">
-                            <div class="pricing-box float-left">
-                                <div class="pricing-content strong-box">
-                                    <p class="pricing-line-height">$25 / lesson</p>
+                    <!--https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->
+                </section>
+                <!--************************************Gallery******************************************************************************-->
+                <!--************************************FAQ******************************************************************************-->
+
+                <section class="container-fluid faq-section">
+                    <span id="faq"></span>
+                    <div class="row">
+                        <div class="col-xs-12 sub-heading-center">
+                            <h2 class="h2-heading">FAQ</h2>
+                        </div>
+                    </div>
+
+                    <div class="row accordion-row">
+                        <div class="col-xs-12 col-sm-6 col md-6 text-center faq-column">
+
+                            <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
+                            <button class="accordion">How old does my child need to be to start?</button>
+                            <div class="panel">
+                                <p>Children as young as five years of age are allowed to participate in the childrens class.</p>
+                            </div>
+
+                            <button class="accordion">What should I bring to the sessions?</button>
+                            <div class="panel">
+                                <p>You should bring a freshly washed gi/ no-gi rash top and shorts, a mouth guard and water bottle. </p>
+                            </div>
+
+                            <button class="accordion">Can friends and family watch?</button>
+                            <div class="panel">
+                                <p>Yes, we have a spectating area for any friends and familiy of the students.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col md-6 text-center faq-column">
+
+                            <button class="accordion">Can I get hurt?</button>
+                            <div class="panel">
+                                <p>Jiu-Jitsu is a very controlled martial art. However, with any martial art there is a chance of injury.</p>
+                            </div>
+
+                            <button class="accordion">How can I receive my next belt?</button>
+                            <div class="panel">
+                                <p>You have to show that you can perform at a level higher than your current belt level. Other parts that contribute are how often students participate in classes and in competition.</p>
+                            </div>
+
+                            <button class="accordion">What facilities do you have?</button>
+                            <div class="panel">
+                                <p>The academy had a large mat area, male and female toilets, showers and change rooms. There is also a small resting area with a water dispenser.</p>
+                            </div>
+                            <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
+                        </div>
+                    </div>
+                </section>
+                <!--************************************FAQ******************************************************************************-->
+
+                <!--************************************Pricing******************************************************************************-->
+
+                <Section class="container-fluid pricing-section">
+                    <span id="pricing"></span>
+                    <div class="row">
+                        <div class="col-xs-12 sub-heading-center">
+                            <h2 class="h2-heading">Pricing</h2>
+                        </div>
+                    </div>
+                    <div class="row pricing-row">
+
+                        <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
+                            <div class="text-center">
+                                <div class="pricing-box float-right">
+                                    <div class="pricing-content strong-box">
+                                        <p class="pricing-line-height">$50 / hr</p>
+                                    </div>
+                                    <div class="pricing-content strong-box">
+                                        <p class="pricing-line-height">Private</p>
+                                    </div>
+                                    <div class="pricing-content pricing-bottom">
+                                        <p>With a Private lesson we will work on any technique that you or your instructor feels needs improvement. </p>
+                                    </div>
                                 </div>
-                                <div class="pricing-content strong-box">
-                                    <p class="pricing-line-height">Casual</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
+                            <div class="text-center">
+                                <div class="pricing-box float-left">
+                                    <div class="pricing-content strong-box">
+                                        <p class="pricing-line-height">$25 / lesson</p>
+                                    </div>
+                                    <div class="pricing-content strong-box">
+                                        <p class="pricing-line-height">Casual</p>
+                                    </div>
+                                    <div class="pricing-content pricing-bottom">
+                                        <p>This is a single session if you don't always have time or you have an irregular schedule. </p>
+                                    </div>
                                 </div>
-                                <div class="pricing-content pricing-bottom">
-                                    <p>This is a single session if you don't always have time or you have an irregular schedule. </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
+                            <div class="text-center">
+                                <div class="pricing-box float-right special-color">
+                                    <div class="pricing-content strong-box ">
+                                        <p class="pricing-line-height">$120 / mo</p>
+                                    </div>
+                                    <div class="pricing-content strong-box">
+                                        <p class="pricing-line-height">Unlimited</p>
+                                    </div>
+                                    <div class="pricing-content pricing-bottom">
+                                        <p>If you want to join as many sessions as you can in the week, than Unlimited is perfect for you. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
+                            <div class="text-center">
+                                <div class="pricing-box float-left">
+                                    <div class="pricing-content strong-box">
+                                        <p class="pricing-line-height">$80 / mo</p>
+                                    </div>
+                                    <div class="pricing-content strong-box">
+                                        <p class="onceaweek-font pricing-line-height">Once a Week</p>
+                                    </div>
+                                    <div class="pricing-content pricing-bottom">
+                                        <p>For those who only want to train once a week.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
-                        <div class="text-center">
-                            <div class="pricing-box float-right special-color">
-                                <div class="pricing-content strong-box ">
-                                    <p class="pricing-line-height">$120 / mo</p>
-                                </div>
-                                <div class="pricing-content strong-box">
-                                    <p class="pricing-line-height">Unlimited</p>
-                                </div>
-                                <div class="pricing-content pricing-bottom">
-                                    <p>If you want to join as many sessions as you can in the week, than Unlimited is perfect for you. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6  col-md-3 pricing-column">
-                        <div class="text-center">
-                            <div class="pricing-box float-left">
-                                <div class="pricing-content strong-box">
-                                    <p class="pricing-line-height">$80 / mo</p>
-                                </div>
-                                <div class="pricing-content strong-box">
-                                    <p class="onceaweek-font pricing-line-height">Once a Week</p>
-                                </div>
-                                <div class="pricing-content pricing-bottom">
-                                    <p>For those who only want to train once a week.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="hidden-xs hidden-sm hidden-md hidden-lg">
-            <h6>heading so w3c won't give a warning</h6>
-        </div>
+                </section>
+            </div>
+            <div class="hidden-xs hidden-sm hidden-md hidden-lg">
+                <h6>heading so w3c won't give a warning</h6>
+            </div>
         </div>
     </section>
 
@@ -628,7 +665,7 @@
     <!--************************************contact******************************************************************************-->
 
     <section class="contact-section container-fluid">
-        
+
         <div class="container contact-opacity">
 
 
@@ -709,7 +746,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-xs-12 col-sm-12 text-center a">
                     <div class=" no-padding map-outer-container">
                         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3273.4360947450377!2d138.63722329258113!3d-34.87039399773799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1531043627247" style="border:0" allowfullscreen></iframe>
@@ -726,15 +763,15 @@
     <footer class="container-fluid">
         <div class="row footer-row heading-row-no-side-margin">
             <div class="col-xs-12 footer-column ">
-                
+
                 <div class="col-xs-12  col-sm-12 col-md-offset-3 col-md-6">
-                <ul class="socialmedia-ul">
-                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-instagram"></i></a></li>
-                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-twitter"></i></a></li>
-                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-youtube"></i></a></li>
-                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-facebook"></i></a></li>
-                    <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-snapchat-ghost"></i></a></li>
-                </ul>
+                    <ul class="socialmedia-ul">
+                        <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-instagram"></i></a></li>
+                        <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-twitter"></i></a></li>
+                        <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-youtube"></i></a></li>
+                        <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-facebook"></i></a></li>
+                        <li class="socialmedia-li"><a href="#home" class="socialmedia-link"><i class="fab fa-snapchat-ghost"></i></a></li>
+                    </ul>
                 </div>
                 <div class="com-xs-12 col-sm-12 col-md-3">
                     <div class="copywrite-text">
