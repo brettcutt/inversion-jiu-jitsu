@@ -430,7 +430,7 @@ nav .nav-dropdown-1 ul li a {
 }
 
 .about-us-row {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
     margin-bottom: 30px;
     padding: 30px;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
@@ -823,9 +823,17 @@ nav .nav-dropdown-1 ul li a {
 .gallery-pricing-faq-section {
     background-image: url(../images/mat.jpg);
     background-attachment: fixed;
-    background-position: left bottom;
     background-repeat: no-repeat;
     padding: 0;
+}
+
+@media (max-width: 767px) {
+    .gallery-pricing-faq-section {
+    background-image: url(../images/mat.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    padding: 0;
+}
 }
 
 .gallery-pricing-faq-opacity{
