@@ -4,6 +4,7 @@
  For my front end project I decided to build a Jiu-Jitsu academy site. I thought this would be a great idea because I'm a student of
  the martial art, I have good knowledge in it, I believe I know what visitors would be looking for before deciding to join and
  I can use the facility I train at to take pictures and limit the amount I take off the web.
+ View the site here https://brettcutt.github.io/inversion-jiu-jitsu/
  
  ## Technologies used:
  ### HTML5
